@@ -521,7 +521,7 @@ header {
 
 .line {
   border-bottom: 2px solid ;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   width: 100%;
 }
 
@@ -602,8 +602,21 @@ nav {
     justify-content: center;
   }
 
+  .status-buttons .hidden {
+    /* display: none; */
+  }
+
+  .status-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
   .transaction-card {
-    padding: 15px;
+    padding: 5px;
+  }
+
+  .transaction-card > div {
+    margin-bottom: auto;
   }
 
   .modal-content {
@@ -613,7 +626,6 @@ nav {
   
   .custom-date-container {
     display: grid;
-    margin-bottom: 10px;
   }
 
   .custom-date-container .kosong {
@@ -621,10 +633,18 @@ nav {
     font-size: 0px;
   }
 
+  .transactions-container {
+    gap: 7px;
+  }
+
   .transaction-date { font-size: 11px; color: var(--text-light); }
   .transaction-id { font-size: 10px; font-weight: 600; color: var(--text-color); }
   .transaction-detail { font-size: 11px; color: var(--text-color); }
   .transaction-amount { font-size: 16px; font-weight: 600; color: var(--text-color); }
   .transaction-right { font-size: 15px; margin-left: auto; color: var(--text-color); }
-  .transaction-harga { font-size: 14px; font-weight: 600; margin-left: auto; color: var(--primary-color); }
+  .transaction-harga { font-size: 15px; font-weight: 600; margin-left: auto; color: var(--primary-color); }
+
+  .transaction-status {
+    font-size: 10px;
+  }
 }
